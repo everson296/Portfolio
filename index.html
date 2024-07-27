@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> portfolio - inicio </title>
+        <meta charset="utf-8">
+        <script src="js/global.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">   
+        <!--Font Awesome Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Stylesheet (css) -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+        <link rel="stylesheet" type="text/css" href="css/globalStyles.css">    
+    </head>
+    <body>
+
+    <div class="btnUp"></div>
+<!-- ---------------- header ----------------  --> 
+        <header id="init">
+            <nav>
+                <div id="logo">Ever<span class="color">son</span></div>
+                <ul id="menu">
+                    <li class="intensMenu"><a href="#init"> inicio </a></li>
+                    <li class="intensMenu"><a id="trabalhos"> trabalhos </a></li>
+                    <li class="intensMenu"><a href="#footer1"> fim </a></li>
+                </ul>
+            </nav>
+            
+            <div id="apresentation">
+                <h2>olá, sou <span class="color">Everson Silva</span></h2>
+                <p>Estou em busca do primeiro emprego.</p>
+                <a href="src/curriculo/curriculo.pdf" target="_blank"> ver me cv </a>
+                <div id="descer"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            
+        </header>
+        
+<!-- ---------------- filter ----------------  --> 
+        <section id="filtro">
+            <div class="itensFilter active" data-filter="all"> todos </div>
+            <div class="itensFilter" data-filter="css"> css </div>
+            <div class="itensFilter" data-filter="bdd"> banco de dados </div>
+            <div class="itensFilter" data-filter="js"> javascript </div>
+            <div class="itensFilter" data-filter="react"> react </div>
+            <div class="itensFilter" data-filter="api"> api </div>
+        </section>
+        
+<!-- ---------------- container ----------------  --> 
+        <div id="container"></div>
+                
+<!-- ---------------- FOOTER ----------------  -->      
+        <footer id="footer1">
+            © Copyright 2021 - Everson Silva
+        </footer>
+        
+    </body>
+</html>

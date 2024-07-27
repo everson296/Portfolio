@@ -1,0 +1,183 @@
+/* ============== filter ============== */
+#filtro{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- itens menu ----- */
+.itensFilter{
+    height: 40px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #999999;
+    border: 2px solid #999999;
+    transition: .5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 8px;
+}
+
+.itensFilter:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .5s;
+    letter-spacing: 5px;
+}
+
+.active{
+    color: var(--menu);
+    border: 2px solid #fff;
+    background: #fff;
+    transition: .5s;
+    letter-spacing: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+/* ============= container ============= */
+#container{
+    min-height: 100px;
+    width: 1450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+/* ----- card ----- */
+.card{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    width: 665px;
+    transition: .5s;
+}
+
+/* ----- infocard ----- */
+.infoCard{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.title{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.btn{
+    font-size: 18px;
+    width: auto;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: capitalize;
+    transition: .5s;
+    font-family: poppins;
+}
+
+.card:hover > .infoCard{
+    transition: .5s;
+    bottom: 0;
+}
+
+.clickCard{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* ============= responsivo ============= */
+@media only screen and (max-width: 1425px) {
+    #container{
+        width: 100%;  
+        display: grid;
+        grid-template: '. .';
+    }
+    
+    header{
+        height: 50vh;
+    }
+    
+    .card{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+/*     ----- container ----- */
+    #container{
+        width: 100%;
+        flex-direction: column; 
+        display: flex;
+        
+    }
+    
+    .card{
+        height: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .card:hover{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
