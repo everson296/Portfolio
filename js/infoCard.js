@@ -8,15 +8,15 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'api',
         "imagens": [
-            'poke-agenda-home.png',
-            'poke-agenda-pokemons.png',
-            'poke-agenda-berryes.png',
-            'poke-agenda-geração-3.png',
-            'poke-agenda-movimentos.png',
-            'poke-agenda-natureza.png',
-            'poke-agenda-pesquisa.png',
-            'poke-agenda-tipo-normal.png',
-            'poke-agenda-versus.png',
+            'poke-agenda-home',
+            'poke-agenda-pokemons',
+            'poke-agenda-berryes',
+            'poke-agenda-geração-3',
+            'poke-agenda-movimentos',
+            'poke-agenda-natureza',
+            'poke-agenda-pesquisa',
+            'poke-agenda-tipo-normal',
+            'poke-agenda-versus',
         ],
         "descricao": 'projeto criado da api de pokemon.',
         "ferramentas": 'html, css, js, database',
@@ -50,10 +50,10 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'js',
         "imagens": [
-            'parte1.png',
-            'parte2.png',
-            'parte3.png',
-            'parte4.png'
+            'parte1',
+            'parte2',
+            'parte3',
+            'parte4'
         ],
         "descricao": 'site para treinar javascript.',
         "ferramentas": 'html, css, js',
@@ -279,9 +279,9 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'dbb',
         "imagens": [
-            'portfolio-inicio.png',
-            'portfolio-cards.png',
-            'title.png',
+            'portfolio-inicio',
+            'portfolio-cards',
+            'title',
          ],
         "descricao": 'portfolio para mostrar alguns dos meus projetos já feitos.',
         "ferramentas": 'html, css, js, database',
@@ -315,10 +315,10 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'api',
         "imagens": [ 
-            'inicio.png',
-            'rick-and-morty-episodios.png',
-            'rick-and-morty-locais.png',
-            'rick-and-morty-personagens.png',
+            'inicio',
+            'rick-and-morty-episodios',
+            'rick-and-morty-locais',
+            'rick-and-morty-personagens',
         ],
         "descricao": 'site para o consumo da api rickandmorty.',
         "ferramentas": 'html, css, js, database',
@@ -448,17 +448,17 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'bdd',
         "imagens": [ 
-            'luffy.png',
-            'zoro.png',
-            'sanji.png',
-            'usopp.png',
-            'chopper.png',
-            'jimbe.png',
-            'nami.png',
-            'franky.png',
-            'brook.png',
-            'robin.png',
-            'yamato.png',
+            'luffy',
+            'zoro',
+            'sanji',
+            'usopp',
+            'chopper',
+            'jimbe',
+            'nami',
+            'franky',
+            'brook',
+            'robin',
+            'yamato',
         ],
         "descricao": 'site sobre o anime one piece.',
         "ferramentas": 'html, css, js',
@@ -524,9 +524,9 @@ const bancoDeDados = [
         "img": 'capa',
         "filter": 'css',
         "imagens": [ 
-            'inicio.png',
-            'navegar.png',
-            'noticias.png',
+            'inicio',
+            'navegar',
+            'noticias',
         ],
         "descricao": 'copia do dite oficial da epic games.',
         "ferramentas": 'html, css',
@@ -628,7 +628,7 @@ const criarIntroducao = (banco) => {
     if(images.length > 0){
         for(let i = 0; i <= images.length - 1; i++){
             document.getElementById('slider').innerHTML += `
-                <img src="./../src/work/${banco[id].pasta}/imagens/${images[i]}">
+                <img src="./../src/work/${banco[id].pasta}/imagens/${images[i]}.png">
             `
         }
     }else{
